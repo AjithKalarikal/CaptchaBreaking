@@ -11,9 +11,11 @@ text = image_to_string(img)
 
 if(text[1]=='+'):
 	print(int(text[0])+int(text[2]))
-if(text[1]=='-'): 
+elif(text[1]=='-'): 
 	print(int(text[0])-int(text[2]))
-if(text[1]=='*'): 
+elif(text[1]=='*'): 
 	print(int(text[0])*int(text[2]))
-if(text[1]=='/'): 
+elif(text[1]=='/'): 
 	print(int(text[0])/int(text[2]))
+else:
+	print("wrong characters")                                                                            
